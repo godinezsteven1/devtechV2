@@ -1,9 +1,13 @@
 import { useRef, useEffect } from "react";
 import * as THREE from "three";
+import imageGradient from "../static/textures/5Gradient.jpeg"; // Adjust the path as needed
 
 export default function Projects() {
 
     const canvas = useRef(); 
+    const texturePathTest = '../static/textures/5Gradient.jpeg'; // Update this path as needed
+    console.log("Texture Path:", texturePathTest); // Log the texture path to verify
+
 
 
 
@@ -20,8 +24,7 @@ export default function Projects() {
     const scene = new THREE.Scene();
 
     const textureLoader = new THREE.TextureLoader();
-    const gradientTexture = textureLoader.load('/gradient.jpg'); // dne 
-    // console.log(gradientTexture); // and this is also not failing? 
+    const gradientTexture = textureLoader.load(imageGradient); 
     gradientTexture.magFilter = THREE.NearestFilter;
 
     const material = new THREE.MeshToonMaterial({
