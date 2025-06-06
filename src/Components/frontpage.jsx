@@ -28,7 +28,7 @@ export default function FrontPage() {
           PROJECTS
         </Link>
         <a
-          href="#contact"
+          href="/contact"
           className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide"
         >
           CONTACT
