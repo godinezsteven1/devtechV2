@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 my-8">
           <div className="flex flex-col items-center">
           <img
-          src="https://avatars.githubusercontent.com/u/169615840?v=4"
+          src="/static/aboutImages/marceline.png"
           alt="Steven 2024"
           className="about-img mx-auto border-4 border-pink-200 rounded-xl shadow-lg w-150 h-120 object-cover"
         />

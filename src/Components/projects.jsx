@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import * as THREE from "three";
-import imageGradient from "../static/textures/5Gradient.jpeg"; // Adjust the path as needed
+import imageGradient from "/static/textures/5Gradient.jpeg"; // Adjust the path as needed
 
 export default function Projects() {
 
