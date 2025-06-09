@@ -32,6 +32,8 @@ export default function Projects() {
     const mesh2 = new THREE.Mesh(new THREE.OctahedronGeometry(1), material);
     const mesh3 = new THREE.Mesh(new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16), material);
     const mesh4 = new THREE.Mesh(new THREE.TorusGeometry(0.9), material);
+    const mesh5 = new THREE.Mesh(new THREE.TetrahedronGeometry(1), material);
+    const mesh6 = new THREE.Mesh(new THREE.BoxGeometry(1), material);
 
     const objectDistance = 4; // has to be 1 more then proj 
 
@@ -39,11 +41,13 @@ export default function Projects() {
     mesh1.position.set(perfectDistance, 0, 0); 
     mesh2.position.set(-perfectDistance, -objectDistance, 0);
     mesh3.position.set(perfectDistance, -objectDistance * 2, 0); // DOUBLE THE DISTANCE PER NEW SHAPE PLEASE 
-    mesh4.position.set(-perfectDistance, -objectDistance * 3, 0); // DOUBLE THE DISTANCE PER NEW SHAPE PLEASE
+    mesh4.position.set(-perfectDistance, -objectDistance * 3, 0); 
+    mesh5.position.set(perfectDistance, -objectDistance * 4, 0); 
+    mesh6.position.set(-perfectDistance, -objectDistance * 5, 0);
 
 
-    scene.add(mesh1, mesh2, mesh3, mesh4);
-    const sectionMeshes = [mesh1, mesh2, mesh3, mesh4];
+    scene.add(mesh1, mesh2, mesh3, mesh4, mesh5, mesh6);
+    const sectionMeshes = [mesh1, mesh2, mesh3, mesh4, mesh5, mesh6];
 
 
 
@@ -231,7 +235,7 @@ export default function Projects() {
             <Link
             to="/projects/signlang"
             className="text-white hover:text-pink-300 transition-colors">
-            AI Sign Language
+             AI Sign Language
             </Link>
           </h2>
         </section>
@@ -239,9 +243,9 @@ export default function Projects() {
         <section className="h-screen flex items-center justify-end pr-20">
           <h2 className="section-text text-4xl font-bold">
             <Link
-            to="/projects/signlang"
+            to="/projects/TumorNet"
             className="text-white hover:text-pink-300 transition-colors">
-            Tumor net CNN
+             Tumor net CNN
             </Link>
           </h2>
         </section>
@@ -249,9 +253,9 @@ export default function Projects() {
         <section className="h-screen flex items-center justify-start pl-20">
           <h2 className="section-text text-4xl font-bold">
             <Link
-            to="/projects/signlang"
+            to="/projects/GraduateAI"
             className="text-white hover:text-pink-300 transition-colors">
-            Graduate projects
+             Graduate projects
             </Link>
           </h2>
         </section>
@@ -259,9 +263,9 @@ export default function Projects() {
         <section className="h-screen flex items-center justify-end pr-20">
           <h2 className="section-text text-4xl font-bold">
             <Link
-            to="/projects/signlang"
+            to="/projects/Keylogger"
             className="text-white hover:text-pink-300 transition-colors">
-            Malware Keylogger
+             Malware Keylogger
             </Link>
           </h2>
         </section>
@@ -269,9 +273,19 @@ export default function Projects() {
         <section className="h-screen flex items-center justify-start pl-20">
           <h2 className="section-text text-4xl font-bold">
             <Link
-            to="/projects/signlang"
+            to="/projects/Ransom"
             className="text-white hover:text-pink-300 transition-colors">
-            Malware Ransom
+             Malware Ransom
+            </Link>
+          </h2>
+        </section>
+
+        <section className="h-screen flex items-center justify-end pr-20">
+          <h2 className="section-text text-4xl font-bold">
+            <Link
+            to="/projects/oldPortfolio"
+            className="text-white hover:text-pink-300 transition-colors">
+              ThreeJs Portfolio
             </Link>
           </h2>
         </section>

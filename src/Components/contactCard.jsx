@@ -3,8 +3,7 @@
 
 export default function ContactCard() {
   return (
-   <div className="max-w-[360px] w-full mx-auto bg-[#2f1063] rounded-lg shadow-md p-4 border"
-   style={{ backgroundColor: '#1b132b' }}>
+   <div className="max-w-[360px] w-full mx-auto rounded-lg shadow-md p-4 border">
   <form>
     <div className="mb-4">
       <label className="block mb-2 text-gray-50" for="name"> Name </label>
