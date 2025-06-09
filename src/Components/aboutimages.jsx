@@ -22,7 +22,7 @@ export default function AboutPage() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="https://avatars.githubusercontent.com/u/169615840?v=4"
+                src="/static/aboutImages/bbypic1.png"
                 alt="todler pics"
                 className="relative rounded-xl shadow-2xl w-80 h-80 object-cover"
               />
