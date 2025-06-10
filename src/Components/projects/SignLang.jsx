@@ -26,7 +26,7 @@ export default function SignLang() {
                         />
                     </div>
                     <p className="text-xs text-gray-500 mt-3 text-right font-mono">
-                        https://github.com/godinezsteven1/AI-SignLanguage
+                        Figure 7: https://github.com/godinezsteven1/AI-SignLanguage
                     </p>
                 </div>
 
@@ -43,7 +43,7 @@ export default function SignLang() {
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 1: System Pipeline Flowchart
+                                    Figure 8: System Pipeline Flowchart
                                 </p>
                             </div>
                         
@@ -69,33 +69,52 @@ export default function SignLang() {
                         </div>
                 </div>
 
-                {/* Low Level Overview*/}
                 <div className="mb-20">
-                    <h2 className="text-3xl font-semibold mb-8 text-purple-300">Technical Implementation</h2>
+                    <h2 className="text-3xl font-semibold mb-8 text-purple-300">Technical Implementation -NLP</h2>
                     <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+                        
                         <div className="flex flex-col items-center">
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                                <img
-                                    src="/static/signlang/technical-details.jpg"
-                                    alt="Neural network architecture"
-                                    className="relative rounded-xl shadow-2xl w-150 h-150 object-cover"
-                                />
+                                    <img
+                                        src="/static/projectImages/nlp.png"
+                                        alt="AI model architecture diagram"
+                                        className="relative rounded-xl shadow-2xl w-130 h-60 object-contain"
+                                    />
+                                </div>
+                                <p className="caption mt-4 text-sm text-purple-300 font-mono">
+                                    Figure 9: System Pipeline Flowchart
+                                </p>
                             </div>
-                            <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                Figure 2: ????
-                            </p>
-                        </div>
-                        
-                        {/* Text content */}
                         <div className="flex-1 space-y-4">
                             <p className="text-lg leading-relaxed">
-                                ???
+                                <a
+                                    href="/static/projectImages/report/CS5100.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span className="text-pink-400 underline hover:text-pink-300 transition">
+                                    Click me for detailed report!
+                                    </span>
+                                </a>
                             </p>
-                            ????
-                            <p className="text-lg leading-relaxed">
-                                ????
-                            </p>
+
+                            The nature of a Natural Language Processing pipeline is to process human 
+                            language and in our case mimic its structure. Initially, I believed a Hidden Markov 
+                            Model would fit most appropriately as they are modeled to find the "probabilistic
+                            relationship between a sequence of observations and a sequence of hidden states". 
+                            However, due to the inclusion and complexity of day to day conversation. A model that assumes
+                            each emission, observed word / token, is independent of the rest lacks to capture 
+                            transitions states between words or better known as, context. My solution was to 
+                            transition the classic HMM to a Bigram Hidden Markov Model. A Bigram Hidden Markov
+                            models introduces dependencies to the previous observation, that help capture word state
+                            transitions in a sequence, while eliminating emissions; each word its is own state and our 
+                            algorithm tracks transition probabilities between words. This alongside with its limitations, 
+                            gave a solution to state transitions that is able to keep context as the most probable 
+                            next word sequence using a Viterbi algorithm that has a faster runtime. However, the BHMM is
+                            still limited as it cannot accurately capture long term sequences with out it being 
+                            computationally expensive where it slows down outputs, ruining the quality of the software.
+                    
                         </div>
                     </div>
                 </div>

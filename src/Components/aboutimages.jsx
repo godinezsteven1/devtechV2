@@ -156,7 +156,7 @@ export default function AboutPage() {
                   className="relative rounded-xl shadow-2xl w-full h-96 object-cover"
                 />
               </div>
-              <p className="caption mt-4 text-sm text-purple-300 font-mono">Marceline</p>
+              <p className="caption mt-4 text-sm text-purple-300 font-mono">Figure 5: Marceline</p>
             </div>
             <div className="flex flex-col items-center">
               <div className="relative group">
@@ -167,7 +167,7 @@ export default function AboutPage() {
                   className="relative rounded-xl shadow-2xl w-full h-96 object-cover"
                 />
               </div>
-              <p className="caption mt-4 text-sm text-purple-300 font-mono">Mavis</p>
+              <p className="caption mt-4 text-sm text-purple-300 font-mono">Figure 6: Mavis</p>
             </div>
           </div>
         </section>

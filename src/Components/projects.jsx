@@ -234,8 +234,10 @@ export default function Projects() {
           <h2 className="section-text text-4xl font-bold">
             <Link
             to="/projects/signlang"
-            className="text-white hover:text-pink-300 transition-colors">
-             AI Sign Language
+            >
+              <span className="text-white hover:text-pink-300 transition-colors">
+                AI Sign Language
+             </span>
             </Link>
           </h2>
         </section>
@@ -244,8 +246,10 @@ export default function Projects() {
           <h2 className="section-text text-4xl font-bold">
             <Link
             to="/projects/TumorNet"
-            className="text-white hover:text-pink-300 transition-colors">
-             Tumor net CNN
+            >
+              <span className="text-white hover:text-pink-300 transition-colors">
+                Tumor net CNN
+             </span>
             </Link>
           </h2>
         </section>
@@ -254,8 +258,10 @@ export default function Projects() {
           <h2 className="section-text text-4xl font-bold">
             <Link
             to="/projects/GraduateAI"
-            className="text-white hover:text-pink-300 transition-colors">
-             Graduate projects
+            >
+              <span className="text-white hover:text-pink-300 transition-colors">
+                Graduate projects
+              </span>
             </Link>
           </h2>
         </section>
@@ -264,8 +270,10 @@ export default function Projects() {
           <h2 className="section-text text-4xl font-bold">
             <Link
             to="/projects/Keylogger"
-            className="text-white hover:text-pink-300 transition-colors">
-             Malware Keylogger
+            >
+              <span className="text-white hover:text-pink-300 transition-colors">
+                Malware Keylogger
+              </span>
             </Link>
           </h2>
         </section>
@@ -274,8 +282,10 @@ export default function Projects() {
           <h2 className="section-text text-4xl font-bold">
             <Link
             to="/projects/Ransom"
-            className="text-white hover:text-pink-300 transition-colors">
-             Malware Ransom
+            >
+              <span className="text-white hover:text-pink-300 transition-colors">
+                Malware Ransom
+              </span>
             </Link>
           </h2>
         </section>
@@ -284,8 +294,10 @@ export default function Projects() {
           <h2 className="section-text text-4xl font-bold">
             <Link
             to="/projects/oldPortfolio"
-            className="text-white hover:text-pink-300 transition-colors">
+            >
+              <span className="text-white hover:text-pink-300 transition-colors">
               ThreeJs Portfolio
+              </span>
             </Link>
           </h2>
         </section>
