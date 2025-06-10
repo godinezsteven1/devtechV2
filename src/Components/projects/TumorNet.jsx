@@ -18,12 +18,11 @@ export default function TumorNet() {
                 </h1>
 
                 <div className="mb-20">
-                    <div className="relative w-full h-[95vh] rounded-xl overflow-hidden shadow-2xl">
+                    <div className="relative w-full h-[70vh] rounded-xl overflow-hidden shadow-2xl bg-gray-900">
                         <img
-                            // need new one 
-                            src=""
+                            src="/static/projectImages/tumor1.png"
                             alt="real time detection of tumors"
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                         />
                     </div>
                     <p className="text-xs text-gray-500 mt-3 text-right font-mono">
@@ -38,16 +37,18 @@ export default function TumorNet() {
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
-                                        src=""
+                                        src="/static/projectImages/tumor2.png"
                                         alt="AI model architecture diagram"
-                                        className="relative rounded-xl shadow-2xl w-130 h-60 object-contain"
+                                        className="relative rounded-xl shadow-2xl w-150 h-100 object-contain"
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 11: Neural Network Architecture
+                                    Figure 11: CNN Architecture pt1
                                 </p>
                             </div>
-                        
+
+
+
 
                             <div className="flex-1 space-y-4">
                                 <div className="mb-6 p-6 bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/20 backdrop-blur-sm">
@@ -78,25 +79,28 @@ export default function TumorNet() {
                         <div className="flex flex-col items-center">
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                                <img
-                                    src="/static/signlang/technical-details.jpg"
-                                    alt="Neural network architecture"
-                                    className="relative rounded-xl shadow-2xl w-150 h-150 object-cover"
-                                />
+                                    <img
+                                        src="/static/projectImages/tumor3.png"
+                                        alt="AI model architecture diagram"
+                                        className="relative rounded-xl shadow-2xl w-160 h-95 object-contain"
+                                    />
+                                </div>
+                                <p className="caption mt-4 text-sm text-purple-300 font-mono">
+                                    Figure 11: CNN Architecture pt1
+                                </p>
                             </div>
-                            <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                Figure 9: ????
-                            </p>
-                        </div>
                         
-                        <div className="flex-1 space-y-4">
-                            <p className="text-lg leading-relaxed">
-                                Click me for detailed report!
-                            </p>
-                            NLP stuff 
-                            <p className="text-lg leading-relaxed">
-                            ???
-                            </p>
+                        <div className="flex-1 space-y-4 text-lg">
+                            The network employs a progressive feature extraction approach through three 
+                            convolutional layers that expand channels from 1→64→128→256, each using 3×3
+                             kernels with ReLU activations and max pooling for spatial downsampling with
+                              average pooling layer that reduces variable 
+                              input sizes to a fixed 6×6 spatial dimension, eliminating preprocessing
+                               requirements while maintaining 9,216 extracted features. These features 
+                               feed into a fully connected classification network (9,216→1,024→256→4)
+                                with 20% dropout regularization to prevent overfitting. The architecture
+                                is optimized for clinical deployment with ~10.5M parameters, supports real-time 
+                                 GPU inference, and leverages PyTorch's CrossEntropyLoss. 
                         </div>
                     </div>
                 </div>
