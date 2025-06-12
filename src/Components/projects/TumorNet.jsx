@@ -86,7 +86,7 @@ export default function TumorNet() {
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 11: CNN Architecture pt1
+                                    Figure 12: CNN Architecture pt2
                                 </p>
                             </div>
                         
