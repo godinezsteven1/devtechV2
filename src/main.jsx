@@ -13,6 +13,7 @@ import Keylogger from './Components/projects/Keylogger.jsx'
 import Ransom from './Components/projects/Ransom.jsx'
 import OldPortfolio from './Components/projects/oldPortfolio.jsx'
 import Error404 from './Components/Error404.jsx'
+import Scroll from './Components/scroll.jsx'
 
 // const color = "bg-gradient-to-br from-[#0a0f1c] via-[#1b132b] to-[#221435]"
 const color2 = "bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900"
@@ -20,6 +21,7 @@ const color2 = "bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <Scroll /> {/* to top */}
       <div className={color2}>
         <Routes>
           {/* Main page routes  */}
