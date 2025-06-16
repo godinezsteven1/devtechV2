@@ -93,12 +93,7 @@ export default function OldPortfolio() {
                                 </p>
                             </div>
                         <div className="flex-1 space-y-4">
-                            Uses OS and Fernet libary to lock up entire machine(after Desktop directory- which is where most of a person's information is) and writes password in script's directory. The Ransomware runs in the entire machine, capturing ALL files, except those before Desktop Directory. 
-                            Script converts all information into a cipher text, the same cipher in which your hard drive is encrypted! The only files that are not locked are the Decrypt file, the ransome itself, and the key file.
-                            Decrypting the files with out the password is impossible, as the key is generated at random and stored in the scripts directory. Be warned, there is no way to recover the files without the password, and there is 
-                            no safety implementation to prevent accidental deletion of the key file, no implementation that wont allow you to override the key file, and no implementation that will prevent you from deleting the Decrypt file.
-                            My implementation is raw and does not have any safety measures, as I wanted to mimic real ransomware behavior. Use a virtual machine to run this project, My set up I am using 'UTM' with 'parrotOS' installed. 
-                            At the end of the day this is still a virus, use responsibly.
+                            sdfg
                         </div>
                     </div>
                 </div>
