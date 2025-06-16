@@ -57,13 +57,17 @@ export default function Keylogger() {
                                         <span className="mr-2">🎯</span>My Mission
                                     </h3>
                                     <p className="text-xl leading-relaxed font-medium text-gray-100">
-                                     The project aims to help users understand how key logging works for ethical cybersecurity learning. Unauthorized use of keyloggers on systems you do not own or have explicit permission to access is <strong>illegal</strong> and may result in severe consequences. Please use responsibly.
+                                     The project aims to help users understand how key logging works for ethical cybersecurity learning.
                                     </p>
                                 </div>
                                 <p className="text-lg leading-relaxed">
                                     This projects is for educational purposes. Using python file, instructions to run as an executable in Linux and Windows. Instructions to 
                                     bypass Mac antivirus software and run on MacOs systems are included as well. This project records all keystrokes made on the target 
                                     system. Captures inputs continously and stores them in a local text file. Runs in the background with no GUI, mimiking real malware behavior.
+
+                                    <span className="inline-block bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-sm border border-purple-500/70 text-purple-100 font-semibold px-5 py-2.5 rounded-xl mt-4 shadow-2xl">
+                                        🚧 Unauthorized use of keyloggers on systems you do not own or have explicit permission to access is <strong>illegal</strong> and may result in severe consequences. Please use responsibly.
+                                    </span>
                                 </p>
                             </div>
                         </div>
@@ -87,9 +91,9 @@ export default function Keylogger() {
                                 </p>
                             </div>
                         <div className="flex-1 space-y-4">
-                            Uses OS libary to capture keystroke in library and writes them to a text file. The keylogger runs in the background, capturing all keystrokes made by the user. 
+                            Uses OS libary to capture keystroke and writes them to a text file. The keylogger runs in the background, capturing all keystrokes made by the user. 
                             Script converts special keys into human readable labels while removing unecessary characters like " ' " and [BACKSPACE]. I am recommending you use a virtual machine 
-                            to run this project, as it is a keylogger and can be considered malware. My set up I am using 'UTM' with 'parrotOS' installed. 
+                            to run this project, as it is a keylogger and can be considered malware. My set up I am using 'UTM' with 'parrotOS' installed. At the end of the day this is still a virus, use responsibly.
                         </div>
                     </div>
                 </div>
