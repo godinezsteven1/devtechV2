@@ -21,7 +21,7 @@ export default function GraduateAI() {
                     <div className="relative w-full h-[70vh] rounded-xl overflow-hidden shadow-2xl bg-gray-900">
                         <img
                             src="https://preview.redd.it/theonlyreasonnottoshare-v0-nit2203hpwxb1.jpg?width=640&crop=smart&auto=webp&s=d617a3ba461d6a7cb5e90bc04e42c9d8aff5b5c9"
-                            alt="real time detection of tumors"
+                            alt="funny code meme"
                             // className="w-full h-full object-contain"
                             className="w-full h-full fit items-center justify-center"
                              
@@ -41,7 +41,7 @@ export default function GraduateAI() {
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
                                         src="/static/projectImages/path.png"
-                                        alt="AI model architecture diagram"
+                                        alt="AI Path Search PyGame"
                                         className="relative rounded-xl shadow-2xl w-100 h-105 object-contain"
                                     />
                                 </div>
@@ -89,7 +89,7 @@ export default function GraduateAI() {
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
                                         src="/static/projectImages/rl.png"
-                                        alt="AI model architecture diagram"
+                                        alt="AI RL PyGame"
                                         className="relative rounded-xl shadow-2xl w-90 h-120 object-contain"
                                     />
                                 </div>
@@ -127,7 +127,7 @@ export default function GraduateAI() {
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
                                         src="/static/projectImages/nn.png"
-                                        alt="AI model architecture diagram"
+                                        alt="AI NN image"
                                         className="relative rounded-xl shadow-2xl w-160 h-85 object-contain"
                                     />
                                 </div>
