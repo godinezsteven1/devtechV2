@@ -87,7 +87,7 @@ export default function Keylogger() {
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 19: some to add here as well 
+                                    Figure 19: Code 
                                 </p>
                             </div>
                         <div className="flex-1 space-y-4">
