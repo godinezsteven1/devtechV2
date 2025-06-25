@@ -1,20 +1,19 @@
-
-
-
 export default function ContactCard() {
   return (
    <div className="max-w-[360px] w-full mx-auto rounded-lg shadow-md p-4 border">
-  <form>
+  <form action="https://formspree.io/f/manjlnaj" method="POST">
     <div className="mb-4">
-      <label className="block mb-2 text-gray-50" for="name"> Name </label>
+      <label className="block mb-2 text-gray-50" htmlFor="name"> Name </label>
       <input
         placeholder="John Doe"
         className="w-full p-2 border-b-2 border-purple-400 bg-transparent outline-none focus:border-b-2 focus:border-purple-600"
         type="text"
+        name="name"
+        id="name"
       />
     </div>
     <div className="mb-4">
-      <label className="block mb-2 text-gray-50" for="email"> Email </label>
+      <label className="block mb-2 text-gray-50" htmlFor="email"> Email </label>
       <input
         placeholder="John.Doe@gmail.com"
         className="w-full p-2 border-b-2 border-purple-400 bg-transparent outline-none focus:border-b-2 focus:border-purple-600"
@@ -24,14 +23,18 @@ export default function ContactCard() {
       />
     </div>
     <div className="mb-4">
-      <label className="block mb-2 text-gray-50" for="message"> Message </label>
+      <label className="block mb-2 text-gray-50" htmlFor="message"> Message </label>
       <textarea
-        placeholder="Hi! my name is..."
+        placeholder="Hi! I am reaching out to you because..."
         className="w-full p-2 border-b-2 border-purple-400 bg-transparent outline-none focus:border-b-2 focus:border-purple-600"
         rows="4"
         name="message"
         id="message"
       ></textarea>
+    </div>
+    <div style={{ display: 'none' }}>
+      <label htmlFor="_gotcha">gotcha</label>
+      <input type="text" name="_gotcha" id="_gotcha" />
     </div>
     <div className="mb-4">
       <button
@@ -43,5 +46,5 @@ export default function ContactCard() {
     </div>
   </form>
 </div>
-    );
-    }
+  );
+}

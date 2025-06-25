@@ -17,23 +17,35 @@ export default function FrontPage() {
       <div className="mt-8 flex flex-wrap gap-4 justify-center">
         <Link
           to="/about"
-          className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide"
+          className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide hover:animate-pulse"
         >
           ABOUT
         </Link>
         <Link
           to="/projects"
-          className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide"
+          className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide hover:animate-pulse"
         >
           PROJECTS
         </Link>
         <a
           href="/contact"
-          className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide"
+          className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide hover:animate-pulse"
         >
           CONTACT
         </a>
       </div>
+      
+      <div className="mt-4 w-full flex justify-center">
+  <div className="w-full max-w-md flex justify-center md:justify-center md:mr-5">
+    <Link
+      to="/resume"
+      className="border border-purple-400 text-purple-200 px-6 py-2 rounded-md hover:bg-purple-400 hover:text-black transition duration-300 font-semibold tracking-wide 
+      hover:animate-pulse md:w-33 md:h-10"
+    >
+      RESUME
+    </Link>
+  </div>
+</div>
     </section>
   );
 }
