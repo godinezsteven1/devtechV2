@@ -21,13 +21,13 @@ export default function OldPortfolio() {
                     <div className="relative mx-auto rounded-xl overflow-hidden shadow-2xl">
                         <img
                             src="/static/projectImages/oldPort.gif"
-                            alt="ransom gif"
+                            alt="Three.js portfolio demo"
                             loading="lazy"
                             className="w-full h-full object-cover"
                         />
                     </div>
                     <p className="text-xs text-gray-500 mt-3 text-right font-mono">
-                        Figure 20: https://github.com/godinezsteven1/malware-ransom
+                        Figure 20: https://github.com/godinezsteven1/Godinez-devtech.com
                     </p>
                 </div>
 
@@ -40,13 +40,13 @@ export default function OldPortfolio() {
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
-                                        src="/static/projectImages/ransomCom.png"
-                                        alt="ransom commands to run"
-                                        className="relative rounded-xl shadow-2xl w-150 h-80 object-contain"
+                                        src="/static/projectImages/oldPortpt3.png"
+                                        alt="Three.js portfolio project overview"
+                                        className="relative rounded-xl shadow-2xl w-160 h-100 object-contain"
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 21: Key logger commands to run
+                                    Figure 21: Three.js portfolio CSS renderer
                                 </p>
                             </div>
                         
@@ -54,22 +54,16 @@ export default function OldPortfolio() {
                             <div className="flex-1 space-y-4">
                                 <div className="mb-6 p-6 bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-xl border border-purple-500/20 backdrop-blur-sm">
                                     <h3 className="text-xl font-bold text-purple-300 mb-2 flex items-center">
-                                        <span className="mr-2">🎯</span>My Missiosn
+                                        <span className="mr-2">🎯</span>My Mission
                                     </h3>
                                     <p className="text-xl leading-relaxed font-medium text-gray-100">
-                                     The project aims to make a portfolio in Three.Js
+                                        The project aims to make a portfolio in Three.js
                                     </p>
                                 </div>
                                 <p className="text-lg leading-relaxed">
-                                    This projects is for educational purposes. Using python file, instructions to run as a script for Mac, Linux, and Windows. This project 
-                                    recursively encrypts all files from Desktop directory and below, including subdirectories. You are prompted to input the password to decrypt the files. All 
-                                    files are encypted using cryptography Fernet library. The only files that are not locked are the Decrypt file, the ransome itself, and the key file. So do not 
-                                    rename any file!
-
-
-                                    <span className="inline-block bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-sm border border-purple-500/70 text-purple-100 font-semibold px-5 py-2.5 rounded-xl mt-4 shadow-2xl">
-                                        🚧 Unauthorized use of ransomware on systems you do not own or have explicit permission to access is <strong>illegal</strong> and may result in severe consequences. Please use responsibly.
-                                    </span>
+                                    Using Blender, CC BY licensed 3D assets from sketchfab.com (authors credited in old portfolio repo's README), and Three.js, I created a portfolio to showcase my work in an engaging,
+                                    creative way. The portfolio has a custom CSS renderer overlay that displays a normal website view—apart from that, the entire project is built in Three.js, with a custom camera and lighting
+                                    setup to enhance the 3D effect. Optimizations for user experience have been implemented to make the portfolio run and feel smooth.
                                 </p>
                             </div>
                         </div>
@@ -83,17 +77,20 @@ export default function OldPortfolio() {
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
-                                        src="/static/projectImages/ransomCode.png"
-                                        alt="AI model architecture diagram"
-                                        className="relative rounded-xl shadow-2xl w-145 h-120 object-contain"
+                                        src="/static/projectImages/oldPortpt2.png"
+                                        alt="Three.js portfolio optimization techniques"
+                                        className="relative rounded-xl shadow-2xl w-130 h-120 object-contain"
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 22: some to add here as well 
+                                    Figure 22: Optimization techniques used in the project.
                                 </p>
                             </div>
                         <div className="flex-1 space-y-4">
-                            sdfg
+                            Blender-based 3D assets are heavy. Most, if not all, engineers using some sort of 3D assets in their projects with Three.js will run into performance issues. 
+                            Optimizations are key to making the experience smooth, and several techniques can be used to achieve this. The easiest approach is to use a loading screen. A loading 
+                            screen allows your models and assets to load in the background while the site builds and renders. Other than this, the biggest challenge is to position your screen 
+                            in a 3D space; positioning, scaling vectors for lighting, camera, objects all behave differently and are a pain to deal with. 
                         </div>
                     </div>
                 </div>
