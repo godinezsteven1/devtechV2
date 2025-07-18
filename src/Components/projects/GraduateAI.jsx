@@ -22,9 +22,7 @@ export default function GraduateAI() {
                         <img
                             src="https://preview.redd.it/theonlyreasonnottoshare-v0-nit2203hpwxb1.jpg?width=640&crop=smart&auto=webp&s=d617a3ba461d6a7cb5e90bc04e42c9d8aff5b5c9"
                             alt="funny code meme"
-                            // className="w-full h-full object-contain"
-                            className="w-full h-full fit items-center justify-center"
-                             
+                            className="w-full h-full object-contain"
                         />
                     </div>
                     <p className="text-xs text-gray-500 mt-3 text-right font-mono">
@@ -59,7 +57,7 @@ export default function GraduateAI() {
                                         <span className="mr-2">🎯</span>My Mission
                                     </h3>
                                     <p className="text-xl leading-relaxed font-medium text-gray-100">
-                                    These project aim to professionally showcase course work for my Graduate Artificial Intelligence(CS5100) class at Northeastern University, Developed as a Second Year undergrad
+                                    This project aims to professionally showcase course work for my Graduate Artificial Intelligence (CS5100) class at Northeastern University, developed as a Second Year undergrad.
                                     </p>
                                 </div>
                                 <p className="text-lg leading-relaxed">
@@ -149,7 +147,7 @@ export default function GraduateAI() {
                                     Convolutional Neural Network (two conv+max-pool layers, two dense ReLU 
                                     layers + 20% dropout, trained 10 epochs) achieved 91.28%, both exceeding the 80% 
                                     requirement. Training used Adam optimization with categorical cross-entropy loss, 
-                                    and interpretability was enhanced via loss curves, learned-kernel grids, and sample prediction plots
+                                    and interpretability was enhanced via loss curves, learned-kernel grids, and sample prediction plots.
                                     <span className="inline-block bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-sm border border-purple-500/70 text-purple-100 font-semibold px-5 py-2.5 rounded-xl mt-4 shadow-2xl">
                                         🚧 This repository exists for professional visibility only. Per university policy, sharing assignment solutions publicly is prohibited. Code access is restricted and can only be provided to authorized individuals, such as employers.
                                     </span>
