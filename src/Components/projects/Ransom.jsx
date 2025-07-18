@@ -46,7 +46,7 @@ export default function Ransom() {
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 21: Key logger commands to run
+                                    Figure 21: Ransom commands to run
                                 </p>
                             </div>
                         
@@ -61,9 +61,9 @@ export default function Ransom() {
                                     </p>
                                 </div>
                                 <p className="text-lg leading-relaxed">
-                                    This projects is for educational purposes. Using python file, instructions to run as a script for Mac, Linux, and Windows. This project 
-                                    recursively encrypts all files from Desktop directory and below, including subdirectories. You are prompted to input the password to decrypt the files. All 
-                                    files are encypted using cryptography Fernet library. The only files that are not locked are the Decrypt file, the ransome itself, and the key file. So do not 
+                                    This project is for educational purposes. Using a Python file with instructions to run as a script for Mac, Linux, and Windows. This project 
+                                    recursively encrypts all files from the Desktop directory and below, including subdirectories. You are prompted to input the password to decrypt the files. All 
+                                    files are encrypted using the cryptography Fernet library. The only files that are not locked are the Decrypt file, the ransom itself, and the key file. So do not 
                                     rename any file!
 
 
@@ -84,7 +84,7 @@ export default function Ransom() {
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
                                         src="/static/projectImages/ransomCode.png"
-                                        alt="AI model architecture diagram"
+                                        alt="Ransom code implementation"
                                         className="relative rounded-xl shadow-2xl w-145 h-120 object-contain"
                                     />
                                 </div>
@@ -93,12 +93,12 @@ export default function Ransom() {
                                 </p>
                             </div>
                         <div className="flex-1 space-y-4">
-                            Uses OS and Fernet libary to lock up entire machine(after Desktop directory- which is where most of a person's information is) and writes password in script's directory. The Ransomware runs in the entire machine, capturing ALL files, except those before Desktop Directory. 
-                            Script converts all information into a cipher text, the same cipher in which your hard drive is encrypted! The only files that are not locked are the Decrypt file, the ransome itself, and the key file.
-                            Decrypting the files with out the password is impossible, as the key is generated at random and stored in the scripts directory. Be warned, there is no way to recover the files without the password, and there is 
-                            no safety implementation to prevent accidental deletion of the key file, no implementation that wont allow you to override the key file, and no implementation that will prevent you from deleting the Decrypt file.
-                            My implementation is raw and does not have any safety measures, as I wanted to mimic real ransomware behavior. Use a virtual machine to run this project, My set up I am using 'UTM' with 'parrotOS' installed. 
-                            At the end of the day this is still a virus, use responsibly.
+                            Uses OS and Fernet library to lock up the entire machine (after Desktop directory - which is where most of a person's information is) and writes the password in the script's directory. The ransomware runs on the entire machine, capturing ALL files, except those before the Desktop directory. 
+                            The script converts all information into cipher text, the same cipher in which your hard drive is encrypted! The only files that are not locked are the Decrypt file, the ransom itself, and the key file.
+                            Decrypting the files without the password is impossible, as the key is generated at random and stored in the script's directory. Be warned, there is no way to recover the files without the password, and there is 
+                            no safety implementation to prevent accidental deletion of the key file, no implementation that won't allow you to override the key file, and no implementation that will prevent you from deleting the Decrypt file.
+                            My implementation is raw and does not have any safety measures, as I wanted to mimic real ransomware behavior. Use a virtual machine to run this project. My setup: I am using 'UTM' with 'ParrotOS' installed. 
+                            At the end of the day, this is still a virus - use responsibly.
                         </div>
                     </div>
                 </div>
