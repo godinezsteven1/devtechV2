@@ -93,14 +93,14 @@ export default function TumorNet() {
                         <div className="flex-1 space-y-4 text-lg">
                             The network employs a progressive feature extraction approach through three 
                             convolutional layers that expand channels from 1→64→128→256, each using 3×3
-                             kernels with ReLU activations and max pooling for spatial downsampling with
-                              average pooling layer that reduces variable 
-                              input sizes to a fixed 6×6 spatial dimension, eliminating preprocessing
-                               requirements while maintaining 9,216 extracted features. These features 
-                               feed into a fully connected classification network (9,216→1,024→256→4)
-                                with 20% dropout regularization to prevent overfitting. The architecture
-                                is optimized for clinical deployment with ~10.5M parameters, supports real-time 
-                                 GPU inference, and leverages PyTorch's CrossEntropyLoss. 
+                            kernels with ReLU activations and max pooling for spatial downsampling. An
+                            average pooling layer reduces variable input sizes to a fixed 6×6 spatial 
+                            dimension, eliminating preprocessing requirements while maintaining 9,216 
+                            extracted features. These features feed into a fully connected classification 
+                            network (9,216→1,024→256→4) with 20% dropout regularization to prevent 
+                            overfitting. The architecture is optimized for clinical deployment with 
+                            ~10.5M parameters, supports real-time GPU inference, and leverages 
+                            PyTorch's CrossEntropyLoss.
                         </div>
                     </div>
                 </div>
