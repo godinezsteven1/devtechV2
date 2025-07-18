@@ -27,7 +27,7 @@ export default function Keylogger() {
                         />
                     </div>
                     <p className="text-xs text-gray-500 mt-3 text-right font-mono">
-                        Figure 17: https://github.com/godinezsteven1/malware-keyLogger
+                        Figure 17: Keylogger demonstration - https://github.com/godinezsteven1/malware-keyLogger
                     </p>
                 </div>
 
@@ -41,12 +41,12 @@ export default function Keylogger() {
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
                                         src="/static/projectImages/logger.png"
-                                        alt="Key logger commands to run"
+                                        alt="Keylogger commands to run"
                                         className="relative rounded-xl shadow-2xl w-140 h-90 object-contain"
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 18: Key logger commands to run
+                                    Figure 18: Keylogger commands to run
                                 </p>
                             </div>
                         
@@ -57,13 +57,13 @@ export default function Keylogger() {
                                         <span className="mr-2">🎯</span>My Mission
                                     </h3>
                                     <p className="text-xl leading-relaxed font-medium text-gray-100">
-                                     The project aims to help users understand how key logging works for ethical cybersecurity learning.
+                                        This project aims to help users understand how keylogging works for ethical cybersecurity learning.
                                     </p>
                                 </div>
                                 <p className="text-lg leading-relaxed">
-                                    This projects is for educational purposes. Using python file, instructions to run as an executable in Linux and Windows. Instructions to 
-                                    bypass Mac antivirus software and run on MacOs systems are included as well. This project records all keystrokes made on the target 
-                                    system. Captures inputs continously and stores them in a local text file. Runs in the background with no GUI, mimiking real malware behavior.
+                                    This project is for educational purposes. Using a Python file, instructions to run as an executable in Linux and Windows. Instructions to 
+                                    bypass Mac antivirus software and run on macOS systems are included as well. This project records all keystrokes made on the target 
+                                    system. Captures inputs continuously and stores them in a local text file. Runs in the background with no GUI, mimicking real malware behavior.
 
                                     <span className="inline-block bg-gradient-to-r from-purple-900/40 to-pink-900/40 backdrop-blur-sm border border-purple-500/70 text-purple-100 font-semibold px-5 py-2.5 rounded-xl mt-4 shadow-2xl">
                                         🚧 Unauthorized use of keyloggers on systems you do not own or have explicit permission to access is <strong>illegal</strong> and may result in severe consequences. Please use responsibly.
@@ -82,18 +82,18 @@ export default function Keylogger() {
                                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                                     <img
                                         src="/static/projectImages/codeLogger.png"
-                                        alt="AI model architecture diagram"
+                                        alt="Keylogger code implementation"
                                         className="relative rounded-xl shadow-2xl w-145 h-120 object-contain"
                                     />
                                 </div>
                                 <p className="caption mt-4 text-sm text-purple-300 font-mono">
-                                    Figure 19: Code 
+                                    Figure 19: Keylogger Code Implementation
                                 </p>
                             </div>
                         <div className="flex-1 space-y-4">
-                            Uses OS libary to capture keystroke and writes them to a text file. The keylogger runs in the background, capturing all keystrokes made by the user. 
-                            Script converts special keys into human readable labels while removing unecessary characters like " ' " and [BACKSPACE]. I am recommending you use a virtual machine 
-                            to run this project, as it is a keylogger and can be considered malware. My set up I am using 'UTM' with 'parrotOS' installed. At the end of the day this is still a virus, use responsibly.
+                            Uses the OS library to capture keystrokes and writes them to a text file. The keylogger runs in the background, capturing all keystrokes made by the user. 
+                            The script converts special keys into human-readable labels while removing unnecessary characters like " ' " and [BACKSPACE]. I recommend you use a virtual machine 
+                            to run this project, as it is a keylogger and can be considered malware. My setup uses 'UTM' with 'ParrotOS' installed. At the end of the day, this is still a virus—use responsibly.
                         </div>
                     </div>
                 </div>
