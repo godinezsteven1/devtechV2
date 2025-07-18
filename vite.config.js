@@ -7,4 +7,20 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  preview: {
+    port: 4173,
+    strictPort: true,
+  },
+  server: {
+    port: 5173,
+    strictPort: true,
+    host: true,
+  },
 })
