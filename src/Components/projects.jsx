@@ -17,6 +17,12 @@ export default function Projects() {
         height: window.innerHeight,
     }
 
+    // Mobile detection and responsive parameters
+    const isMobile = window.innerWidth < 768;
+    const cameraDistance = isMobile ? 8 : 6;
+    const objectScale = isMobile ? 1.3 : 1;
+    const objectDistance = isMobile ? 5 : 4;
+
     const scene = new THREE.Scene();
 
     const textureLoader = new THREE.TextureLoader();
@@ -28,16 +34,14 @@ export default function Projects() {
         gradientMap: gradientTexture,
         });
 
-    const mesh1 = new THREE.Mesh(new THREE.IcosahedronGeometry(1), material);
-    const mesh2 = new THREE.Mesh(new THREE.OctahedronGeometry(1), material);
-    const mesh3 = new THREE.Mesh(new THREE.TorusKnotGeometry(0.8, 0.35, 100, 16), material);
-    const mesh4 = new THREE.Mesh(new THREE.TorusGeometry(0.9), material);
-    const mesh5 = new THREE.Mesh(new THREE.TetrahedronGeometry(1), material);
-    const mesh6 = new THREE.Mesh(new THREE.BoxGeometry(1), material);
+    const mesh1 = new THREE.Mesh(new THREE.IcosahedronGeometry(objectScale), material);
+    const mesh2 = new THREE.Mesh(new THREE.OctahedronGeometry(objectScale), material);
+    const mesh3 = new THREE.Mesh(new THREE.TorusKnotGeometry(0.8 * objectScale, 0.35 * objectScale, 100, 16), material);
+    const mesh4 = new THREE.Mesh(new THREE.TorusGeometry(0.9 * objectScale), material);
+    const mesh5 = new THREE.Mesh(new THREE.TetrahedronGeometry(objectScale), material);
+    const mesh6 = new THREE.Mesh(new THREE.BoxGeometry(objectScale), material);
 
-    const objectDistance = 4; // has to be 1 more then proj 
-
-    const perfectDistance = 1.5; 
+    const perfectDistance = isMobile ? 1.2 : 1.5; 
     mesh1.position.set(perfectDistance, 0, 0); 
     mesh2.position.set(-perfectDistance, -objectDistance, 0);
     mesh3.position.set(perfectDistance, -objectDistance * 2, 0); // DOUBLE THE DISTANCE PER NEW SHAPE PLEASE 
@@ -82,8 +86,13 @@ export default function Projects() {
     // Camera
     const cameraGroup = new THREE.Group();
     scene.add(cameraGroup);
-    const camera = new THREE.PerspectiveCamera(35, sizes.width / sizes.height, 0.1, 100);
-    camera.position.z = 6;
+    const camera = new THREE.PerspectiveCamera(
+        isMobile ? 45 : 35, 
+        sizes.width / sizes.height, 
+        0.1, 
+        100
+    );
+    camera.position.z = cameraDistance;
     cameraGroup.add(camera);
 
     // Renderer
@@ -163,8 +172,18 @@ export default function Projects() {
 
     // Handle resize
     const handleResize = () => {
+      const wasMobile = sizes.width < 768;
       sizes.width = window.innerWidth;
       sizes.height = window.innerHeight;
+      
+      const isNowMobile = window.innerWidth < 768;
+      
+      // Update camera if switching between mobile/desktop
+      if (wasMobile !== isNowMobile) {
+        camera.fov = isNowMobile ? 45 : 35;
+        camera.position.z = isNowMobile ? 8 : 6;
+      }
+      
       camera.aspect = sizes.width / sizes.height;
       camera.updateProjectionMatrix();
       renderer.setSize(sizes.width, sizes.height);
@@ -230,8 +249,8 @@ export default function Projects() {
       <div className="relative min-h-[400vh]" >
         <canvas ref={canvas} className="webgl fixed top-0 left-0 w-full h-full" />
         
-        <section className="h-screen flex items-center justify-start pl-20">
-          <h2 className="section-text text-4xl font-bold">
+        <section className="h-screen flex items-center justify-start pl-4 sm:pl-20">
+          <h2 className="section-text text-2xl sm:text-4xl font-bold">
             <Link
             to="/projects/signlang"
             >
@@ -242,8 +261,8 @@ export default function Projects() {
           </h2>
         </section>
         
-        <section className="h-screen flex items-center justify-end pr-20">
-          <h2 className="section-text text-4xl font-bold">
+        <section className="h-screen flex items-center justify-end pr-4 sm:pr-20">
+          <h2 className="section-text text-2xl sm:text-4xl font-bold">
             <Link
             to="/projects/TumorNet"
             >
@@ -254,8 +273,8 @@ export default function Projects() {
           </h2>
         </section>
         
-        <section className="h-screen flex items-center justify-start pl-20">
-          <h2 className="section-text text-4xl font-bold">
+        <section className="h-screen flex items-center justify-start pl-4 sm:pl-20">
+          <h2 className="section-text text-2xl sm:text-4xl font-bold">
             <Link
             to="/projects/GraduateAI"
             >
@@ -266,8 +285,8 @@ export default function Projects() {
           </h2>
         </section>
         
-        <section className="h-screen flex items-center justify-end pr-20">
-          <h2 className="section-text text-4xl font-bold">
+        <section className="h-screen flex items-center justify-end pr-4 sm:pr-20">
+          <h2 className="section-text text-2xl sm:text-4xl font-bold">
             <Link
             to="/projects/Keylogger"
             >
@@ -278,8 +297,8 @@ export default function Projects() {
           </h2>
         </section>
 
-        <section className="h-screen flex items-center justify-start pl-20">
-          <h2 className="section-text text-4xl font-bold">
+        <section className="h-screen flex items-center justify-start pl-4 sm:pl-20">
+          <h2 className="section-text text-2xl sm:text-4xl font-bold">
             <Link
             to="/projects/Ransom"
             >
@@ -290,8 +309,8 @@ export default function Projects() {
           </h2>
         </section>
 
-        <section className="h-screen flex items-center justify-end pr-20">
-          <h2 className="section-text text-4xl font-bold">
+        <section className="h-screen flex items-center justify-end pr-4 sm:pr-20">
+          <h2 className="section-text text-2xl sm:text-4xl font-bold">
             <Link
             to="/projects/oldPortfolio"
             >
