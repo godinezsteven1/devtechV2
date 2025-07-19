@@ -1,7 +1,10 @@
 
+import BackButton from '../BackButton';
+
 export default function Ransom() {
     return (
         <section className="project min-h-screen py-12 px-6">
+            <BackButton />
             <div className="max-w-6xl mx-auto">
 
                 <h1 className="text-5xl font-bold text-center mb-12">
