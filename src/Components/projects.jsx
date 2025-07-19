@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import * as THREE from "three";
 import imageGradient from "/static/textures/5Gradient.jpeg"; // Adjust the path as needed
 import { Link } from 'react-router-dom';
+import BackButton from './BackButton';
 
 export default function Projects() {
 
@@ -247,6 +248,9 @@ export default function Projects() {
       `}</style>
       
       <div className="relative min-h-[400vh]" >
+        <div className="absolute top-4 left-6 z-20">
+          <BackButton />
+        </div>
         <canvas ref={canvas} className="webgl fixed top-0 left-0 w-full h-full" />
         
         <section className="h-screen flex items-center justify-start pl-4 sm:pl-20">
