@@ -18,10 +18,11 @@ export default function SignLang() {
                 </h1>
 
                 <div className="mb-20">
-                    <div className="relative w-full h-[95vh] rounded-xl overflow-hidden shadow-2xl">
+                    <div className="relative mx-auto rounded-xl overflow-hidden shadow-2xl">
                         <img
                             src="https://raw.githubusercontent.com/godinezsteven1/AI-SignLanguage/main/assets/demo.gif"
                             alt="Real-time sign language detection"
+                            loading="lazy"
                             className="w-full h-full object-cover"
                         />
                     </div>
