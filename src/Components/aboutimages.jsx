@@ -141,8 +141,8 @@ export default function AboutPage() {
               and Mavis is a <span className="text-pink-400 font-semibold">2024 Harley-Davidson Sportster S</span>.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              And <span className="text-purple-400 font-bold">no</span>, I'm not a stereotypical Harley biker, 
-              I just love the bikes. They are my pride and joy. I take care of them like they are my children.
+              What attracts me to these American muscle bikes is <span className="text-purple-400 font-bold">pure passion</span> for the machines themselves. 
+              They are my pride and joy. I take care of them like they are my children.
             </p>
           </div>
           
