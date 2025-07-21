@@ -133,7 +133,7 @@ export default function AboutPage() {
           
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 mb-8">
             <p className="text-lg text-gray-300 leading-relaxed mb-4">
-              The other two are my motorcycles, <span className="text-purple-400 font-bold">Marceline</span> and 
+              My other two daughters are my motorcycles, <span className="text-purple-400 font-bold">Marceline</span> and 
               <span className="text-purple-400 font-bold"> Mavis</span>.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed mb-4">
