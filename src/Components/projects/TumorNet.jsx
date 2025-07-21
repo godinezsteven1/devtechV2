@@ -64,7 +64,7 @@ export default function TumorNet() {
                                 </div>
                                 <p className="text-lg leading-relaxed">
                                     This project utilizes a Convolutional Neural Network (CNN) to process and analyze MRI images. These images range from Glioma Tumor,
-                                    Meningioma Tumor, Pituitary Tumor, and No Tumor. The CNN is designed to classify these images into their respective categories, enabling accurate tumor detection and diagnosis.
+                                    Meningioma Tumor, Pituitary Tumor, and Non-tumorous scans. The CNN is designed to classify these images into their respective categories, enabling accurate tumor detection and diagnosis.
                                     The architecture includes multiple convolutional layers, pooling layers, and fully connected layers to extract features and make predictions.
                                     The model will have a fully implemented UI that allows a user to see prediction confidence, visualizations to explain model decisions, all while being 
                                     user-friendly and lightweight for real-time applications.
