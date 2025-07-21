@@ -38,9 +38,9 @@ export default function AboutPage() {
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
             <p className="text-lg text-gray-300 leading-relaxed">
               In <span className="text-purple-400 font-semibold">2023</span>, I started studying Computer Science and Mathematics at 
-              <span className="text-pink-400 font-semibold"> Northeastern University</span>. I didn't start taking my first Graduate course until 
-              Fall semester of Sophomore year when I decided to pursue my Master's in 
-              <span className="text-purple-400 font-semibold"> Artificial Intelligence</span>.
+              <span className="text-pink-400 font-semibold"> Northeastern University</span>. In Fall semester of Sophomore year, I began pursuing my Master's in 
+              <span className="text-purple-400 font-semibold"> Artificial Intelligence </span> 
+                by taking my first Graduate-level course.
             </p>
           </div>
           
