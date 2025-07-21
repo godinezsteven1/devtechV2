@@ -38,9 +38,9 @@ export default function AboutPage() {
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20">
             <p className="text-lg text-gray-300 leading-relaxed">
               In <span className="text-purple-400 font-semibold">2023</span>, I started studying Computer Science and Mathematics at 
-              <span className="text-pink-400 font-semibold"> Northeastern University</span>. I didn't start taking my first Graduate course until 
-              Fall semester of Sophomore year when I decided to pursue my Master's in 
-              <span className="text-purple-400 font-semibold"> Artificial Intelligence</span>.
+              <span className="text-pink-400 font-semibold"> Northeastern University</span>. In Fall semester of Sophomore year, I began pursuing my Master's in 
+              <span className="text-purple-400 font-semibold"> Artificial Intelligence </span> 
+                by taking my first Graduate-level course.
             </p>
           </div>
           
@@ -133,7 +133,7 @@ export default function AboutPage() {
           
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 mb-8">
             <p className="text-lg text-gray-300 leading-relaxed mb-4">
-              The other two are my motorcycles, <span className="text-purple-400 font-bold">Marceline</span> and 
+              My other two daughters are my motorcycles, <span className="text-purple-400 font-bold">Marceline</span> and 
               <span className="text-purple-400 font-bold"> Mavis</span>.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed mb-4">
@@ -141,8 +141,8 @@ export default function AboutPage() {
               and Mavis is a <span className="text-pink-400 font-semibold">2024 Harley-Davidson Sportster S</span>.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              And <span className="text-purple-400 font-bold">no</span>, I'm not a stereotypical Harley biker, 
-              I just love the bikes. They are my pride and joy. I take care of them like they are my children.
+              What attracts me to these American muscle bikes is <span className="text-purple-400 font-bold">pure passion</span> for the machines themselves. 
+              They are my pride and joy. I take care of them like they are my children.
             </p>
           </div>
           
